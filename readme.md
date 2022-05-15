@@ -6,4 +6,9 @@
 ## - Learn Javascript
 ## - Learn Advanced Algorithms and Data Structures with Python
 ## - Introduction to Linux
+## - Learn C
+## - Learn C#
+## - Learn C++
+## - Learn SQL
+## - Learn R
 ## - Learn HTML
