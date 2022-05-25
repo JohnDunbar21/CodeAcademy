@@ -1,3 +1,5 @@
+package Learn_Java.Variables;
+
 public class BadNames {
     public static void main(String[] args) {
         String _1stName = "Samira";

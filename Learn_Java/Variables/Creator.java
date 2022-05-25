@@ -1,3 +1,5 @@
+package Learn_Java.Variables;
+
 public class Creator {
 	public static void main(String[] args) {
         String name = "James Gosling";

@@ -1,4 +1,4 @@
-package Learn_Java.Variables.MathMagic;
+package MathMagic;
 
 public class MathMagic {
     public static void main(String[] args) {

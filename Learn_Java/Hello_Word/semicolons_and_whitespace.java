@@ -1,3 +1,5 @@
+package Learn_Java.Hello_Word;
+
 public class semicolons_and_whitespace {
     public static void main(String[] args) {
         // Press enter or return on your keyboard after each semicolon!

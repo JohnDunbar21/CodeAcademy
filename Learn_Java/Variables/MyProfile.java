@@ -1,3 +1,5 @@
+package Learn_Java.Variables;
+
 public class MyProfile {
     public static void main(String[] args) {
         String name = "John";

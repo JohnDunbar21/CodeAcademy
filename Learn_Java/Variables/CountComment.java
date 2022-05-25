@@ -1,3 +1,5 @@
+package Learn_Java.Variables;
+
 public class CountComment {
     public static void main(String[] args) {
         int numComments = 6;

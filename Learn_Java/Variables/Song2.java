@@ -1,3 +1,5 @@
+package Learn_Java.Variables;
+
 public class Song2 {
     public static void main(String[] args) {
         String line1 = "Nah nah nah nah nah nah nah nah nah yeah";

@@ -1,4 +1,4 @@
-package Learn_Java.Variables.MadLibs;
+package MadLibs;
 
 public class MadLibs {
     /*

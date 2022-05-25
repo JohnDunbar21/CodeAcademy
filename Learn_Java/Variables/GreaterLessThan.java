@@ -1,3 +1,5 @@
+package Learn_Java.Variables;
+
 public class GreaterLessThan {
     public static void main(String[] args) {
         double creditsEarned = 176.5;

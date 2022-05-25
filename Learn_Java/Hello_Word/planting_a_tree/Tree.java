@@ -1,4 +1,4 @@
-package planting_a_tree;
+package Learn_Java.Hello_Word.planting_a_tree;
 
 public class Tree {
     public static void main(String[] args){

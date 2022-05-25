@@ -1,3 +1,5 @@
+package Learn_Java.Variables;
+
 public class MultAndDivide {
     public static void main(String[] args) {
         double subtotal = 30;

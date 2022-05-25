@@ -1,3 +1,5 @@
+package Learn_Java.Variables;
+
 public class Zoo {
     public static void main(String[] args) {
         int animals = 12;
