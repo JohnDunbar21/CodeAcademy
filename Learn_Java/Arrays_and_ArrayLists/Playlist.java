@@ -16,12 +16,15 @@ public class Playlist {
         desertIslandPlaylist.add("Dynasties and Dystopias");
         desertIslandPlaylist.add("Flight of the Silverbird");
 
-        System.out.println(desertIslandPlaylist.size()); // checks the number of items in the ArrayList
+        //System.out.println(desertIslandPlaylist.size()); // checks the number of items in the ArrayList
+        System.out.println("You currently have "+desertIslandPlaylist.size()+" songs in your playlist.");
 
         // the playlist can now only be five songs, so some must be removed until five remain
         desertIslandPlaylist.remove(4); // removes the 5th item in the ArrayList
 
-        System.out.println(desertIslandPlaylist.size());
+        //System.out.println(desertIslandPlaylist.size());
+        System.out.println("You currently have "+desertIslandPlaylist.size()+" songs in your playlist.");
+        System.out.println("Your playlist is currently:");
         System.out.println(desertIslandPlaylist);
 
         // changing the order of two songs
@@ -32,7 +35,8 @@ public class Playlist {
 
         desertIslandPlaylist.set(songA, "Flight of the Silverbird");
         desertIslandPlaylist.set(songB, tempA);
-
+        
+        System.out.println("Your playlist after reorganising two of the songs is:");
         System.out.println(desertIslandPlaylist);
     }
 }
