@@ -1,4 +1,4 @@
-package Learn_Java.Arrays_and_ArrayLists;
+package Learn_Java.Loops;
 
 public class Numbers {
     
