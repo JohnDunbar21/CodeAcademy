@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+      <h1>Complete the Form -<br> Complete the Story!</h1>
+      <hr>
+      <!--Add your form below:-->
+      <form action="story.html" method="GET">
+        <label for="animal-1">Animal:</label>
+        <input name="animal-1" type="text" id="animal-1" required>
+        <br>
+        <label for="animal-2">Another Animal:</label>
+        <input name="animal-2" type="text" id="animal-2" required>
+        <br>
+        <label for="animal-3">One More Animal</label>
+        <input name="animal-3" type="text" id="animal-3" required>
+        <br>
+        <label for="adj-1">Adjective (past tense):</label>
+        <input name="adj-1" type="text" id="adj-1" required>
+        <br>
+        <label for="verb-1">Verb (ends in -ing):</label>
+        <input name="verb-1" type="text" id="verb-1" required>
+        <br>
+        <label for="num-1">Number:</label>
+        <input name="num-1" type="number" id="num-1" required>
+        <br>
+        <span>Yes or No:</span><!-- we use span so that we don't add an unnecessary line break -->
+        <input name="answer" type="radio" id="yes" value="yes" required>
+        <label for="yes">Yes</label>
+        <input name="answer" type="radio" id="no" value="no" required>
+        <label for="no">No</label>
+        <br>
+        <label for="speed">Relative speed (ends in -er):</label>
+        <select id="speed" required>
+          <option value="faster">Faster</option>
+          <option value="slower">Slower</option>
+        </select>
+        <br>
+        <label for="quote">Quote:</label>
+        <input name="quote" type="text" id="quote" list="quote-choices" required>
+        <datalist id="quote-choices">
+          <option value="Hello Everybody!"></option>
+          <option value="This isn't my food..."></option>
+          <option value="How did that get on the roof?"></option>
+          <option value="Now that's what I call a flop."></option>
+        </datalist>
+        <br>
+        <label for="message">Meaningful Message:</label>
+        <textarea name="message" id="message" rows="8" cols="40" required>
+        </textarea>
+        <br>
+        <input type="submit" value="Form My Story!">
+      </form>
+    </section>
+  </body>
+</html>
