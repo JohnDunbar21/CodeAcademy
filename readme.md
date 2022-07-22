@@ -5,7 +5,7 @@
 ## - Learn Java: Completed 17/07/2022
 ## - Learn HTML: Completed 18/07/2022
 ## - Learn CSS: Completed 19/07/2022
-## - Learn Javascript
+## - Learn Javascript: Completed 22/07/2022
 ## - Learn Advanced Algorithms and Data Structures with Python
 ## - Introduction to Linux
 ## - Learn C
