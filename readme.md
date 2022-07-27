@@ -6,7 +6,7 @@
 ## - Learn HTML: Completed 18/07/2022
 ## - Learn CSS: Completed 19/07/2022
 ## - Learn Javascript: Completed 22/07/2022
-## - Visualize Data with Python
+## - Visualize Data with Python: Completed 28/07/2022
 ## - Analyze Data with Python
 ## - Analyze Financial Data with Python
 ## - Master Statistics with Python
