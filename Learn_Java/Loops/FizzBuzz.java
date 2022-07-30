@@ -7,11 +7,11 @@ public class FizzBuzz {
             if (i % 3 == 0){
                 if (i % 5 == 0){
                     System.out.println("FizzBuzz");
+                } else {
+                    System.out.println("Fizz");
                 }
             } else if (i % 5 == 0){
                 System.out.println("Buzz");
-            } else if (i % 3 == 0){
-                System.out.println("Fizz");
             } else {
                 System.out.println(i);
             }
