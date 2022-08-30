@@ -9,6 +9,7 @@
 ## - Visualize Data with Python: Completed 28/07/2022
 ## - Learn Intermediate Python 3
 ## - Learn SQL
+## - Learn Intermediate SQL for Marketers and Product Managers
 ## - Master Statistics with Python
 ## - Fundamental Math for Data Science
 ## - Learn Advanced Algorithms and Data Structures with Python
@@ -26,3 +27,8 @@
 ## - Learn C#
 ## - Learn C++
 ## - Learn R
+## - How to Analyze Business Metrics with SQL
+## - How to Transform Tables with SQL
+## - Learn Intermediate Java
+## - Learn Advanced Java
+## - Learn Advanced Python 3
