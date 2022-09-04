@@ -7,7 +7,7 @@
 ## - Learn CSS: Completed 19/07/2022
 ## - Learn Javascript: Completed 22/07/2022
 ## - Visualize Data with Python: Completed 28/07/2022
-## - Learn Intermediate Python 3
+## - Learn Intermediate Python 3: Completed 05/09/2022
 ## - Learn SQL
 ## - Learn Intermediate SQL for Marketers and Product Managers
 ## - Master Statistics with Python
