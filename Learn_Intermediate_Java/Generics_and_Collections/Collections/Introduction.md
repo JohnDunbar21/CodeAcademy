@@ -7,26 +7,27 @@ The collection framework provides data structures (through interfaces and implem
 The collection framework provides a heirarchical relationship between its interfaces, making the various implementations compatible with each other and thus making our code scalable and flexible. All the interfaces in the collections framework are generic, which allows us to use optimised and tested 'plumbing' for our specific data types.
 
 
-
-                                                            HashSet (Class [`extends` keyword])
-                                                                  |
-                                                         _________|_____ LinkedHashSet (Class [`extends` keyword])
-                                                        |
-                Set (Interface [`implements` keyword]) <|
-                         |                              |_____________________ SortedSet (Interface [`implements` keyword]) <-- TreeSet (Class [`extends` keyword])
+```
+                                                            HashSet (Class [extends keyword])
+                                                               |
+                                                      _________|_____ LinkedHashSet (Class [extends keyword])
+                                                      |
+                Set (Interface [implements keyword]) <|
+                         |                            |_____________________ SortedSet (Interface [implements keyword]) <-- TreeSet (Class [extends keyword])
                          |
                          |
-                         |          ____ Priority Queue (Class [`extends` keyword])
+                         |          ____ Priority Queue (Class [extends keyword])
                          |         |
 Iterable <-- Collection <|- Queue <|
-                         |         |______ Deque (Interface [`implements` keyword]) <-------------------------|
-                         |                                                                                    |
-                         |                                                                                    |
-                         |                                                                                    |
-                         |                                                                                    |-- ArrayDeque (Class [`extends` keyword])
-                List (Interface [`implements` keyword]) <----|                                                |
-                                                             |____ ArrayList (Class [`extends` keyword])      |
-                                                             |                                                |
-                                                             |____ LinkedList (Class [`extends` keyword]) <---|
-                                                             |
-                                                             |____ Vector (Class [`extends` keyword]) <-- Stack (Class [`extends` keyword])
+                         |         |______ Deque (Interface [implements keyword]) <-----------------------|
+                         |                                                                                |
+                         |                                                                                |
+                         |                                                                                |
+                         |                                                                                |-- ArrayDeque (Class [extends keyword])
+                List (Interface [implements keyword]) <----|                                              |
+                                                           |____ ArrayList (Class [extends keyword])      |
+                                                           |                                              |
+                                                           |____ LinkedList (Class [extends keyword]) <---|
+                                                           |
+                                                           |____ Vector (Class [extends keyword]) <-- Stack (Class [extends keyword])
+```
