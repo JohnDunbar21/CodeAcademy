@@ -16,7 +16,17 @@ Some will communicate the **best case** scenario for a program: for example, if 
 
 Instead of timing a program using seconds, we can calculate the runtime using asymptotic notation by looking at how many operations the machine has to perform relative to the input `N`.
 
-For example, a program that has an input of size `N` may tell the computer to run $5N^2+3N+2$ instructions (this expression is purely for demonstration purposes).
+For example, a program that has an input of size `N` may tell the computer to run 5N^2^+3N+2 instructions (this expression is purely for demonstration purposes). This is clearly a very messy expression, but with asymptotic notation, we **drop all of our constants** (the numbers) because as `N` becomes larger, the numerical constants will make only minor differences.
 
+ After dropping our constants, we are left with N^2^+N, but if we take each of these terms out and graph them, we can see that N^2^ grows far quicker than $N$.
 
 <img title="" alt="" src="https://content.codecademy.com/programs/cs-path/asymptotic%20notation/conceptual/runtimes%20compare.png">
+
+For example, when `N` is 1000:
+
+* The N^2^ term is 1,000,000.
+* The N term is 1,000.
+
+It is clear from the graph above that N^2^ would have a longer runtime than N, and when `N` becomes larger than 1,000, the difference becomes even more noticable. As the difference between the two is so massive in this example, we do not need to consider the $N$ term when calculating the runtime: therefore the runtime of the example expression is N^2^.
+
+There are three different ways to describe the runtime: big Theta or 
