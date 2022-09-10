@@ -3,10 +3,10 @@
 ## TLDR
 
 * We use asymptotic notation to describe the runtime of a program: the three types are big Theta, big Omega, and big O.
-* We use big Theta $\Theta$ to describe the runtime if the runtime of the program is the same in every possible case.
+* We use big Theta, $\Theta$, to describe the runtime if the runtime of the program is the same in every possible case.
 * The different common runtimes from fastest to slowest are: $\Theta(1)$, $\Theta(\log N)$, $\Theta(N)$, $\Theta(N*\log N)$, $\Theta(N^2)$, $\Theta(2^N)$, and $\Theta(N!)$.
-* We use big Omega $\Omega$ to describe the best case runtime of a program.
-* We use big O $O$ to describe the worst case runtime of a program.
+* We use big Omega, $\Omega$, to describe the best case runtime of a program.
+* We use big O, $O$, to describe the worst case runtime of a program.
 * **Generally, a program's runtime is expressed in terms of big O**.
 * When finding the runtime of multiple steps, you can divide the program into different sections and add the runtimes of the various sections, then take the slowest runtime and use it to describe the entire program.
 * When analysing the runtime of a program, we mainly care about the part of the program that is the slowest.
