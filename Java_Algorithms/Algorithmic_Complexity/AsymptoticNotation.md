@@ -1,5 +1,6 @@
 # Asymptotic Notation
 
+
 ## TLDR
 
 * We use asymptotic notation to describe the runtime of a program: the three types are big Theta, big Omega, and big O.
@@ -10,6 +11,7 @@
 * **Generally, a program's runtime is expressed in terms of big O**.
 * When finding the runtime of multiple steps, you can divide the program into different sections and add the runtimes of the various sections, then take the slowest runtime and use it to describe the entire program.
 * When analysing the runtime of a program, we mainly care about the part of the program that is the slowest.
+
 
 ### Why Asymptotic Notation?
 
