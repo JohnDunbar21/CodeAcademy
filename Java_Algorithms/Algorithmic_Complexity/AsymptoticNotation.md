@@ -46,3 +46,7 @@ public class Main() {
 ```
 
 Big O Notation is a way to formalise 'fuzzy counting', and allows us to talk formally about the runtime of an algorithm as the input(s) grow.
+
+### Big Theta ($\Theta$)
+
+continue here
