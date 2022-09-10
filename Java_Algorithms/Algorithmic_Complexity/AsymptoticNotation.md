@@ -1,0 +1,18 @@
+# Asymptotic Notation
+
+### Why Asymptotic Notation?
+
+When writing programs, we as programmers need to make smart choices to ensure that our code runs smoothly. Computers themselves appear to not evaluate programs, but when scaling programs to deal with large quantities of data, writing efficient code becomes the difference between its success and failure. In the computer science field, the efficiency of a program is referred to as its **runtime**.
+
+Timing the program would be futile as different machines run at different speeds, and programming is done in many different languages, so we require a general way to define a program's runtime across the variable factors: this is **Asymptotic Notation**.
+
+With asymptotic notation, we define the program's runtime by looking at how many instructions the machine has to perform based on the size of the input: for example, if we were to calculate the maximum element in a collection, we would need to examine each element in the collection. That examining step is the same regardless of the language used, or the machine's abilities. In asymptotic notation, we refer to the size of the inputs as `N`. We may be looking through a collection of 10 or 100 elements, but we only need to know how many steps are performed **relative to the input** so `N` is used in place of a specific number (if there is a second input, we define the size of it as `M`).
+
+There are varieties of asymptotic notation that focus on different concerns.
+
+Some will communicate the **best case** scenario for a program: for example, if we were searching for a value within a collection, the best case would be if we found the element in the first place we looked. Another type will focus on the **worst case** scenario, such as if we searched for a value, looked in the entire dataset and did not find it. Typically we focus on the worst case scenario so there is an upper bound of runtime to communicate: a way of saying "things may get this bad, or slow, but they will not get any worse".
+
+### What is Asymptotic Notation?
+
+
+<img title="" alt="" src="https://content.codecademy.com/programs/cs-path/asymptotic%20notation/conceptual/runtimes%20compare.png">
