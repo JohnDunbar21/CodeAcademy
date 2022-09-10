@@ -1,5 +1,16 @@
 # Asymptotic Notation
 
+## TLDR
+
+* We use asymptotic notation to describe the runtime of a program: the three types are big Theta, big Omega, and big O.
+* We use big Theta ($\Theta$) to describe the runtime if the runtime of the program is the same in every possible case.
+* The different common runtimes from fastest to slowest are: $\Theta(1)$, $\Theta(\log N)$, $\Theta(N)$, $\Theta(N*\log N)$, $\Theta(N^2)$, $\Theta(2^N)$, and $\Theta(N!)$.
+* We use big Omega ($\Omega$) to describe the best case runtime of a program.
+* We use big O ($O$) to describe the worst case runtime of a program.
+* **Generally, a program's runtime is expressed in terms of big O**.
+* When finding the runtime of multiple steps, you can divide the program into different sections and add the runtimes of the various sections, then take the slowest runtime and use it to describe the entire program.
+* When analysing the runtime of a program, we mainly care about the part of the program that is the slowest.
+
 ### Why Asymptotic Notation?
 
 When writing programs, we as programmers need to make smart choices to ensure that our code runs smoothly. Computers themselves appear to not evaluate programs, but when scaling programs to deal with large quantities of data, writing efficient code becomes the difference between its success and failure. In the computer science field, the efficiency of a program is referred to as its **runtime**.
@@ -114,4 +125,50 @@ Below is a list of the most common runtimes that runs from fastest to slowest:
 
 ### Big Omega and Big O
 
-continue here
+A program can have different runtimes for the best and worst case scenarios. For example, a program could have a best case runtime of $\Theta(1)$ and a worst case runtime of $\Theta(N)$. We use different notation when this is the case, where big Omega or $\Omega$ is used to describe the best case and big O or $O$ to describe the worst case. Below is some pseudocode that will return `true` if 12 is in the list and `false` otherwise.
+
+```
+Function with input that is a list of size N:
+    For each value in the list:
+        If value is equal to 12:
+            Return True
+    Return False
+```
+
+How many times will the loop iterate? Let’s take a list of size 1000: if the first value in the list was 12, then the loop would only iterate once. However, if 12 wasn’t in the list at all, the loop would iterate 1000 times. If the input was a list of size `N`, the loop could iterate anywhere from 1 to `N` times depending on where 12 is in the list (or if it’s in the list at all). Thus, in the best case, it has a constant runtime and in the worst case it has a linear runtime.
+
+There are many ways to describe the runtime of this program:
+
+* This program has a best case runtime of $\Theta(1)$.
+* This program has a worst case runtime of $\Theta(N)$.
+* This program has a runtime of $\Omega(1)$.
+* This program has a runtime of $O(N)$.
+
+It may be tempting to say that the program has a runtime of $\Theta(N)$, but this is not true as the program does not have a linear runtime in every case (only the worst case).
+
+When describing the runtime, typically it is the worst case scenario being referred to when there are multiple scenarios such as the one discussed above.
+
+### Adding Runtimes
+
+Sometimes a function/program can have multiple scenarios occuring at once: for example, the pseudocode below prints all the positive values up to `N` and then returns the number of times it takes to divide `N` by 2 until `N` is 1.
+
+```
+Function that takes a positive integer N:
+    Set a variable i equal to 1
+    Loop until i is equal to N:
+        Print i
+        Increment i
+ 
+    Set a count variable to 0
+    Loop while N is not equal to 1:
+        Increment count
+        N = N/2
+    Return count
+```
+
+We begin by dividing the pseudocode into two distinct chunks:
+
+* In the first loop we iterate until we reach `N`. Therefore the runtime of the first loop is $\Theta(N)$.
+* In the second loop, since `N` is being halved on each iteration, the runtime of this second loop is $\Theta(\log N)$.
+
+When we combine these runtimes, we are left with: $\Theta(N)$ + $\Theta(\log N)$. However, when analysing the performance of a program, we only consider the worst case scenario. Therefore, since the first loop runs in a linear fashion and the second loop runs in a logarithmic fashion, the **overall runtime would be $\Theta(N)$**. It would also be appropriate to say that the runtime is $O(N)$ since this represents the worst case scenario, and people will generally use big O notation.
