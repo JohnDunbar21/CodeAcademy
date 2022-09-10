@@ -96,4 +96,22 @@ Let's see how many iterations the loop will perform based on the input `N`:
 | .     | .                    |
 | N     | $\log_2(N)$          |
 
-As this table shows, in every input case, the loop will iterate $\log_2(N)$ times. However, we drop all constants in asymptotic notation, so the runtime of this specific code would be $\Theta\log(N)$.
+As this table shows, in every input case, the loop will iterate $\log_2(N)$ times. However, we drop all constants in asymptotic notation, so the runtime of this specific code would be $\Theta(\log N)$.
+
+### Common Runtimes
+
+Below is a list of the most common runtimes that runs from fastest to slowest:
+
+* $\Theta(1)$ - This is a **constant** runtime. This is the runtime when a program will always do the same thing regardless of the input. For example, a program that only prints “hello, world” runs in $\Theta(1)$ because the program will always just print “hello, world”.
+* $\Theta(\log N)$ - This is a **logarithmic** runtime. You often see this runtime in search algorithms.
+* $\Theta(N)$ - This is a **linear** runtime. You often see this runtime when you have to iterate through an entire dataset.
+* $\Theta(N*\log N)$ - You often see this runtime in sorting algorithms.
+* $\Theta(N^2)$ - This is a **polynomial** runtime. You will often see this when you have to search through a two-dimensional dataset (such as a matrix) or nested loops.
+* $\Theta(2^N)$ - This is an **exponential** runtime. You often see this in recursive algorithms.
+* $\Theta(N!)$ - This is a **factorial** runtime. You will see this runtim when you have to generate all of the different permutations of something. For example, a program that generates all the different ways to order the letters "abcd" would have this runtime.
+
+<img title="" alt="" src="https://content.codecademy.com/programs/cs-path/asymptotic%20notation/conceptual/commonRuntimes.svg">
+
+### Big Omega and Big O
+
+continue here
