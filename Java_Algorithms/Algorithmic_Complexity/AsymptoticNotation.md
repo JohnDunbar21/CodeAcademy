@@ -16,7 +16,7 @@ Some will communicate the **best case** scenario for a program: for example, if 
 
 Instead of timing a program using seconds, we can calculate the runtime using asymptotic notation by looking at how many operations the machine has to perform relative to the input `N`.
 
-For example, a program that has an input of size `N` may tell the computer to run \\(5N^2+3N+2\\) instructions (this expression is purely for demonstration purposes).
+For example, a program that has an input of size `N` may tell the computer to run $5N^2+3N+2$ instructions (this expression is purely for demonstration purposes).
 
 
 <img title="" alt="" src="https://content.codecademy.com/programs/cs-path/asymptotic%20notation/conceptual/runtimes%20compare.png">
