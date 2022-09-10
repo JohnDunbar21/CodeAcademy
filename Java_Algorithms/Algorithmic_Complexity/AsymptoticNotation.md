@@ -29,4 +29,20 @@ For example, when `N` is 1000:
 
 It is clear from the graph above that $N^2$ would have a longer runtime than $N$, and when `N` becomes larger than 1,000, the difference becomes even more noticable. As the difference between the two is so massive in this example, we do not need to consider the $N$ term when calculating the runtime: therefore the runtime of the example expression is $N^2$.
 
-There are three different ways to describe the runtime: big Theta or $\Theta(N^2)$, big O or $O(N^2)$, big Omega or $\Omega(N^2)$.
+There are three different ways to describe the runtime: big Theta or $\Theta(N^2)$, big O or $O(N^2)$, big Omega or $\Omega(N^2)$. The details between the three notations will be explained further in the document.
+
+You may see the term **execution count** being used in evaluating algorithms, this is because execution count is more precise than Big O notation. The following Java method, `addUpTo()`, can be as low as $2N$ or as high as $5N+2$, depending on how we count the number of operations:
+
+```java
+public class Main() { 
+  void int addUpTo(int n) {
+    int total = 0;
+    for (int i = 1; i <= n; i++) {
+      total += i;
+    }
+  return total;
+  } 
+}
+```
+
+Big O Notation is a way to formalise 'fuzzy counting', and allows us to talk formally about the runtime of an algorithm as the input(s) grow.
