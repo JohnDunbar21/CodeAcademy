@@ -49,4 +49,50 @@ Big O Notation is a way to formalise 'fuzzy counting', and allows us to talk for
 
 ### Big Theta
 
-continue here
+We use big Theta when a program has only **one case** in term of runtime. Take a look at the pseudocode for a function that prints the values in a list below:
+
+```
+Function with input that is a list of size N:
+    For each value in list:
+        Print the value
+```
+
+The number of instructions the machine has to perform is based on how many iterations the loop will do because if the loop does more iterations, then the computer will perform instructions. Below is a table that shows how many iterations the loop will do dependening on the value of `N`:
+
+| Size of List | Number of Iterations |
+|:------------:|:--------------------:|
+| 1            | 1                    |
+| 2            | 2                    |
+| 3            | 3                    |
+| .            | .                    |
+| .            | .                    |
+| .            | .                    |
+| .            | .                    |
+| .            | .                    |
+| N            | N                    |
+
+As the table shows, with a list of size `N`, the program has a linear runtime of `N` as the program has to print a value `N` times. Thus we would say the runtime is $\Theta(N)$.
+
+Below is a more complicated example where the pseudocode takes in an integer `N` and counts the number of times it takes for `N` to be divided by 2 until `N` reaches 1.
+
+```
+Function that has integer input N:
+    Set a count variable to 0
+    Loop while N is not equal to 1:
+        Increment count
+        N = N/2
+    Return count
+```
+
+Let's see how many iterations the loop will perform based on the input `N`:
+
+| N     | Number of Iterations |
+|:-----:|:--------------------:|
+| 1     | 0                    |
+| 2     | 1                    |
+| 4     | 2                    |
+| 8     | 3                    |
+| 16    | 4                    |
+| .     | .                    |
+| N     | $\log_2(N)$          |
+
