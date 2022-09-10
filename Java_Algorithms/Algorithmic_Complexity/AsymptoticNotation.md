@@ -29,4 +29,4 @@ For example, when `N` is 1000:
 
 It is clear from the graph above that $N^2$ would have a longer runtime than $N$, and when `N` becomes larger than 1,000, the difference becomes even more noticable. As the difference between the two is so massive in this example, we do not need to consider the $N$ term when calculating the runtime: therefore the runtime of the example expression is $N^2$.
 
-There are three different ways to describe the runtime: big Theta or $\theta(N^2)$, big O or $O(N^2)$, big Omega or $\omega(N^2)$.
+There are three different ways to describe the runtime: big Theta or $\Theta(N^2)$, big O or $O(N^2)$, big Omega or $\Omega(N^2)$.
