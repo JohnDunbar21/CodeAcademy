@@ -96,3 +96,4 @@ Let's see how many iterations the loop will perform based on the input `N`:
 | .     | .                    |
 | N     | $\log_2(N)$          |
 
+As this table shows, in every input case, the loop will iterate $\log_2(N)$ times. However, we drop all constants in asymptotic notation, so the runtime of this specific code would be $\Theta\log(N)$.
