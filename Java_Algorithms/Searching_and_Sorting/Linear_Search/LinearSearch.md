@@ -137,4 +137,83 @@ A time complexity of $O(N)$ means the number of comparisons is proportional to t
 
 ### Linear Search On A 2D Array
 
-continue here
+A two-dimensional array in Java may look like:
+
+```java
+double[][] data = {{1.5, 2.6, 3.7}, {7.5, 6.4, 5.3}, {9.8, 8.7, 7.6}, {3.6, 5.7, 7.8}};
+```
+
+To retrieve elements in a two-dimensional array, we need to provide the row and column index respectively as follows:
+
+```java
+data[1][2]; // 5.3
+```
+
+We traverse two-dimensional arrays using nested loops: these loops can be of any type, but we typically use nested `for-loops` to keep track of the indices:
+
+```java
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        public static int[][] twoDimensionalArray = {{0, 1, 2}, {4, 5, 6}, {7, 8, 9}};
+ 
+        for (int row = 0; row < twoDimensionalArray.length; row++) {
+            for (int column = 0; column < twoDimensionalArray[row].length; column++) {
+                System.out.print("Index [" + row + "][" + column + "]: ");
+                System.out.println(twoDimensionalArray[row][column]);
+     }
+   }
+ }
+}
+```
+
+The loop above would then output:
+
+```
+Index [0][0]: 0
+Index [0][1]: 1
+Index [0][2]: 2
+Index [1][0]: 4
+Index [1][1]: 5
+Index [1][2]: 6
+Index [2][0]: 7
+Index [2][1]: 8
+Index [2][2]: 9
+```
+
+Below is the pseudocode for how to apply a linear search algorithm to a two-dimensional array:
+
+```
+for each row in the search_list
+    for each column of that row
+        if element at that row and column equals the target value then
+            print the index of the row and column and return 1
+print message that element is not found and return -1
+```
+
+The Java implementation of this is:
+
+```java
+class LinearSearch2D {
+   public static int linearSearch2D(String[][] array, String target) {
+    for (int row = 0; row < array.length; row++) {
+       for (int column = 0; column < array[row].length; column++) {
+	   if (array[row][column].equals(target))
+          {
+            System.out.println(target + " located at position [" + row + "][" + column + "] inside the two-dimensional array.");
+            return 1;
+          }
+       }
+     }
+     System.out.println("Couldn't find the target value " + target + " in the array.");
+     return -1;
+  }
+   public static void main(String[] args) {
+     String[][] haystack = {{"hay", "hay"}, {"hay", "hay"}, {"hay", "hay"}, {"hay", "hay"}, {"needle", "hay"}, {"hay", "hay"}};
+     String target = "needle";
+     linearSearch2D(haystack, target);
+ }
+}
+```
+
