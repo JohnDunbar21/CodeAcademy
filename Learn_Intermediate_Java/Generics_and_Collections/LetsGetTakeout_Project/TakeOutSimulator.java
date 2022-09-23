@@ -25,6 +25,7 @@ public class TakeOutSimulator {
     } else {
       System.out.println("Your input must be an integer");
     }
+    return null;
   }
 
   public boolean shouldSimulate() {
@@ -52,7 +53,7 @@ public class TakeOutSimulator {
     String userPrompt = "Choose an item from the menu (answer using an integer): \n"+menu.toString();
     
     IntUserInputRetriever<?> intUserInputRetriever = (selection) -> {
-      if (selection <= menu.size()) {
+      if (selection <= menu.menu.size()) {
         return menu.getFood(selection);
       } else {
         throw new IllegalArgumentException("You have made an invalid selection. Try again.\n"); 
@@ -90,7 +91,7 @@ public class TakeOutSimulator {
     System.out.printf("You have $%s left to spend.", customerMoneyLeft);
     getMenuSelection();
     if (getMenuSelection().getPrice() <= customerMoneyLeft) {
-      shoppingBag.put(getMenuSelection());
+      shoppingBag.shoppingBag.put(getMenuSelection());
       customerMoneyLeft -= getMenuSelection().getPrice();
     } else if (getMenuSelection().getPrice() >= customerMoneyLeft) {
       System.out.println("It looks like you cannot afford that item. Choose another item or checkout.");

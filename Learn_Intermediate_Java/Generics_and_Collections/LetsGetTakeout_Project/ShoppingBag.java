@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ShoppingBag<T extends PricedItem<Integer>> {
-  Map<T, Integer> shoppingBag = new HashMap<>();
+  protected Map<T, Integer> shoppingBag = new HashMap<>();
+  
 
   public ShoppingBag() {
     this.shoppingBag = new HashMap<>();
@@ -24,5 +25,13 @@ public class ShoppingBag<T extends PricedItem<Integer>> {
       sumTotal = sumTotal + element.getKey().getPrice() * element.getValue();
     }
     return sumTotal;
+  }
+
+  public Map<T, Integer> getMap() {
+    return this.shoppingBag;
+  }
+
+  public void setMap(Map<T, Integer> map) {
+    this.shoppingBag = map;
   }
 }

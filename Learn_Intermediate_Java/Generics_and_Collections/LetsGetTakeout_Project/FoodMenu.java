@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FoodMenu {
-  private List<Food> menu = new ArrayList<>();
+  protected List<Food> menu = new ArrayList<>();
 
   public FoodMenu() {
-    menu.add("Burger", "with cheese and salad", 12);
-    menu.add("Hot Dog", "with caramelised onions", 10);
-    menu.add("Pizza", "with custom toppings", 8);
+    menu.add(new Food("Burger", "with cheese and salad", 12));
+    menu.add(new Food("Hot Dog", "with caramelised onions", 10));
+    menu.add(new Food("Pizza", "with custom toppings", 8));
   }
 
   // numbers have not been added to the method yet
@@ -32,7 +32,7 @@ public class FoodMenu {
 
   public Food getLowestCostFood() {
     int lowest = menu.get(0).getPrice(); // returns the price of index 1
-    Food cheapest;
+    Food cheapest = null;
     for (Food item: menu) {
       if (item.getPrice() < lowest) {
         cheapest = item; // sets cheapest to the current lowest value
